@@ -22,3 +22,8 @@
     color: #2563EB;
     background: #fff;
 }
+
+.active{
+    border-bottom: 3px #fff solid;
+    border-radius: 5px 5px 0 0 !important;
+}
