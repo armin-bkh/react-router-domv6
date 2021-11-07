@@ -1,0 +1,24 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #2563EB;
+    color: #fff;
+}
+
+.navBar li{
+    margin: 0 10px;
+}
+
+.navBar li a{
+    transition: all .3s ease;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navBar li a:hover{
+    color: #2563EB;
+    background: #fff;
+}
