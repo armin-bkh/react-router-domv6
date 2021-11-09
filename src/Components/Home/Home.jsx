@@ -1,11 +1,12 @@
-import { Outlet, Route, Routes } from "react-router";
+import { Outlet, Route, Routes, useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
-const Home = () => {
+const Home = (props) => {
+  const location = useLocation();
   return (
     <main className={styles.container}>
-      <h1>home page</h1>
+      <h1>home page { location.state?.hi }</h1>
       {/* <Routes>
         <Route path="explain" element={<p>this is RRD-v6</p>} />
       </Routes> */}

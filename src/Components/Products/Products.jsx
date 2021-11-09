@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const productList = [
   { name: "book", id: 1 },
@@ -7,6 +7,7 @@ export const productList = [
 ];
 
 const Products = () => {
+  const navigate = useNavigate();
   return (
     <main>
       <h1>products page</h1>
@@ -17,6 +18,7 @@ const Products = () => {
           </li>
         ))}
       </ul>
+      <button onClick={()=> navigate('/home', { replace: true, state: {hi: "armin"} })}>back to home</button>
     </main>
   );
 };
