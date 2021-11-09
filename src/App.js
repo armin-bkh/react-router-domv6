@@ -11,7 +11,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="home/*" element={<Home />} />
+        <Route path="home/*" element={<Home />}>
+          <Route path="explain" element={<p>this is RRD-v6</p>} />
+          <Route path="hi" element={<p>hi there</p>} />
+        </Route>
+
         <Route path="products/*" element={<Products />} />
         <Route path="products/:id" element={<Product />} />
       </Routes>
