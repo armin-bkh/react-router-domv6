@@ -9,7 +9,7 @@ const Header = () => {
           <li>
             <NavLink
               className={(nav) => (nav.isActive ? styles.active : "")}
-              to="/"
+              to="/home"
             >
               Home
             </NavLink>
