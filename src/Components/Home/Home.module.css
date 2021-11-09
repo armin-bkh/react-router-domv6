@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    min-height: 80vh;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.homeBtn{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #2563EB;
+}
